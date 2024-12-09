@@ -42,7 +42,7 @@ BEGIN
 			SET @Sentence ='Print TABLE 02'
 			EXEC dbo.SP_LOG_STOREPROCEDURE_SENTENCE 'I' ,@LayoutSP,@Sentence,@SentStore= @SentStore OUTPUT;
 
-			PRINT @ExecStore + 'A'
+			PRINT @ExecStore
 
 			EXEC dbo.SP_LOG_STOREPROCEDURE_SENTENCE 'F' ,@SentStore = @SentStore;
 
@@ -72,7 +72,7 @@ END;
 
 
 
-/* 
+/*
 
 EXEC dbo.SP_TEST_01
 
